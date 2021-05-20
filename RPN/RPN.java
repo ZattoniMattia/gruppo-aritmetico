@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Stack;
 import java.util.*;
 
-public class ciao {
+public class RPN {
     
     private String espress;
     private String[] v_token;
