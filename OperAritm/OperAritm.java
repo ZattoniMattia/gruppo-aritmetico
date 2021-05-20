@@ -29,16 +29,24 @@ public class OperAritm{
     return somma;
   }
   
- // viene dato in input un vettore, appena trova un operatore mette a null quella cella e quella prima (dove tecnicamente c'è un numero)
- // mentre quella in posizione i-2 viene sostutuita con il valore ris in forma di Stringa 
-
+ /** viene dato in input un vettore, appena trova un operatore mette a null quella cella e quella prima (dove tecnicamente c'è un numero)
+ mentre quella in posizione i-2 viene sostutuita con il valore ris in forma di Stringa 
+ poi, dopo aver messo il risultato, le celle vengono spostate in modo che non ci siano celle=null 
+ */
+  
  public String remove(String vett, int ris){
-   for(int i=0; i<vett.lenght; i++){
+   bolean exit=false; 
+   int pos = 0;
+   
+   for(int i=0; i<vett.lenght || exit=false; i++){
+
      if (vett[i] == "+" || vett[i] == "-" || vett[i] == "*" || vett[i] == "/"){
        vett[i] = null;
        vett[i-1] = null;
        String num = String.valueOf(ris);
        vett[i-2] = num;
+       exit = true;
+       
      }
      
    }
