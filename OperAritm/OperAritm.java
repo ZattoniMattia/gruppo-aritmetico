@@ -38,7 +38,7 @@ public class OperAritm{
    bolean exit=false; 
    int pos = 0;
    
-   for(int i=0; i<vett.lenght || exit=false; i++){
+   for(int i=0; i<vett.lenght || exit==false; i++){
 
      if (vett[i] == "+" || vett[i] == "-" || vett[i] == "*" || vett[i] == "/"){
        vett[i] = null;
@@ -46,9 +46,14 @@ public class OperAritm{
        String num = String.valueOf(ris);
        vett[i-2] = num;
        exit = true;
-       
+       pos = i;
      }
-     
    }
+   
+  for(int j=pos; j<vett.lenght - 1; j++){
+    vett[j] = vett[j+1];
+  } 
+   
+ return vett;
  }
 }
