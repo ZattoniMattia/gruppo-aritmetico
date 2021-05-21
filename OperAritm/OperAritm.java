@@ -1,6 +1,5 @@
 
 public class OperAritm{
-  int somma;
   
   public int somma(String [] vett){
     String[] v_temp = new String(vett);
@@ -25,8 +24,8 @@ public class OperAritm{
      //richiamare metodo remove 
       vett.remove(vett, ris);
     }
-    this.somma = vett[0].parseInt();
-    return this.somma;
+    int somma = vett[0].parseInt();
+    return int somma;
   }
   
  /** viene dato in input un vettore, appena trova un operatore mette a null quella cella e quella prima (dove tecnicamente c'è un numero)
