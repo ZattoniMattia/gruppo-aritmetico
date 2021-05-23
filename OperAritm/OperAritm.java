@@ -22,7 +22,7 @@ public class OperAritm{
       }
       
      //richiamare metodo remove 
-      vett.remove(vett, ris);
+      vett = this.remove(vett, ris);
     }
     int somma = vett[0].parseInt();
     return int somma;
