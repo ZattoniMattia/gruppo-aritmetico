@@ -49,7 +49,7 @@ public class OperAritm{
      }
    }
    
-  for(int j=pos; j<vett.lenght - 1; j++){
+  for(int j=pos-1; j<vett.lenght - 1; j++){
     vett[j] = vett[j+1];
   } 
    
