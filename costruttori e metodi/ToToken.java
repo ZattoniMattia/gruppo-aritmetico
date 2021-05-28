@@ -71,7 +71,6 @@ public class ToToken{
 	retrurn (segni);
 	}
 			    
-	public String [] Aggiusta(String s, String segni){
-		String [] = 
-	}	    
+	
+	
 }
