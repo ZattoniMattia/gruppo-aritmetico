@@ -10,8 +10,9 @@ public class ToToken{
 	}
 	public ToToken(String s){
 		this.espres = s;
-		this.v_token =s.split(" ");
+		this.v_token =s.split(" +-/*()");
 	}
+	
 	public ToToken(ToToken k){
 		this.espres = k.getEspres();
 		this.v_token = k.getV_token();
@@ -58,13 +59,19 @@ public class ToToken{
 			}
 		}
 	}
-	public String split (String s){
-	String operatori = "+-/*()";
-	for (int i=0;i< s.lenght();i++){
-		for (int j<0;operatori.lenght();j++){
-			if s.charAt(i)==operatori.(i)
+	pubic String [] Segni(stringa s){
+		String operatori = "+-*/()";
+		String [] segni = new String ("");
+		for (int i = 0; i < s.lenght; i--){
+			if (opratori.contains(s[i]){
+			segni[i] += s[i];
+			}
 		}
+			    
+	retrurn (segni);
 	}
-	}
-	
+			    
+	public String [] Aggiusta(String s, String segni){
+		String [] = 
+	}	    
 }
