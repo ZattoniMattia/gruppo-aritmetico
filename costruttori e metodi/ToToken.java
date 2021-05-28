@@ -4,18 +4,24 @@ public class ToToken{
 	private String espres;
 	private String[] v_token;
 
-	class ToToken(){
+	public ToToken(){
 		this.espress = " ";
 		this.v_token = new String[0];
-
 	}
-	class ToToken(String s){
+	public ToToken(String s){
 		this.espres = s;
 		this.v_token =s.split(" ");
 	}
+	public ToToken(ToToken k){
+		this.espres = k.getEspres();
+		this.v_token = k.getV_token();
+		
+	}
 	public void setToToken(String espres, String[] v_token){
 		this.espres = espres;
-		this.v_token = new String[0];
+		this.v_token = new String[v_token.lenght];
+		for (i=0; i<v_token.lenght; i++){
+		}
 	}
 	public void setEspres(String espres){
 		this.espres = new String(" ");
