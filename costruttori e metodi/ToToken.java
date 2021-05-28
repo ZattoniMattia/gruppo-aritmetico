@@ -58,5 +58,13 @@ public class ToToken{
 			}
 		}
 	}
+	public String split (String s){
+	String operatori = "+-/*()";
+	for (int i=0;i< s.lenght();i++){
+		for (int j<0;operatori.lenght();j++){
+			if s.charAt(i)==operatori.(i)
+		}
+	}
+	}
 	
 }
