@@ -17,6 +17,8 @@ public class OperAritm{
           ris = vett[i-2].parseInt() * vett[i-1].parseInt();
           break;
         case "/" : 
+          if (vett[i-1]==0){
+          }
           ris = vett[i-2].parseInt() / vett[i-1].parseInt();
           break;
       }
